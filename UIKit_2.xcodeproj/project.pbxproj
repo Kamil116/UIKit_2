@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E518EF12A582F550035188F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E518EF02A582F550035188F /* DetailViewController.swift */; };
 		8E683D8C2A572BFA00F189F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E683D8B2A572BFA00F189F4 /* AppDelegate.swift */; };
 		8E683D8E2A572BFA00F189F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E683D8D2A572BFA00F189F4 /* SceneDelegate.swift */; };
 		8E683D902A572BFA00F189F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E683D8F2A572BFA00F189F4 /* ViewController.swift */; };
 		8E683D932A572BFA00F189F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E683D912A572BFA00F189F4 /* Main.storyboard */; };
 		8E683D952A572BFD00F189F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E683D942A572BFD00F189F4 /* Assets.xcassets */; };
 		8E683D982A572BFD00F189F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E683D962A572BFD00F189F4 /* LaunchScreen.storyboard */; };
+		8E683DA02A57325C00F189F4 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E683D9F2A57325C00F189F4 /* CharacterTableViewCell.swift */; };
+		8ED650292A5742B70042F075 /* Adam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ED650232A5742B70042F075 /* Adam.jpg */; };
+		8ED6502A2A5742B70042F075 /* Beth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED650242A5742B70042F075 /* Beth.png */; };
+		8ED6502B2A5742B70042F075 /* Jerry.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED650252A5742B70042F075 /* Jerry.png */; };
+		8ED6502C2A5742B70042F075 /* Japheth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED650262A5742B70042F075 /* Japheth.png */; };
+		8ED6502D2A5742B70042F075 /* Rick.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED650272A5742B70042F075 /* Rick.png */; };
+		8ED6502E2A5742B70042F075 /* Naruto.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED650282A5742B70042F075 /* Naruto.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E518EF02A582F550035188F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8E683D882A572BFA00F189F4 /* UIKit_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E683D8B2A572BFA00F189F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E683D8D2A572BFA00F189F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,13 @@
 		8E683D942A572BFD00F189F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E683D972A572BFD00F189F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E683D992A572BFD00F189F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E683D9F2A57325C00F189F4 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		8ED650232A5742B70042F075 /* Adam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Adam.jpg; sourceTree = "<group>"; };
+		8ED650242A5742B70042F075 /* Beth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beth.png; sourceTree = "<group>"; };
+		8ED650252A5742B70042F075 /* Jerry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jerry.png; sourceTree = "<group>"; };
+		8ED650262A5742B70042F075 /* Japheth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japheth.png; sourceTree = "<group>"; };
+		8ED650272A5742B70042F075 /* Rick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rick.png; sourceTree = "<group>"; };
+		8ED650282A5742B70042F075 /* Naruto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Naruto.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +77,16 @@
 				8E683D8F2A572BFA00F189F4 /* ViewController.swift */,
 				8E683D912A572BFA00F189F4 /* Main.storyboard */,
 				8E683D942A572BFD00F189F4 /* Assets.xcassets */,
+				8ED650232A5742B70042F075 /* Adam.jpg */,
+				8ED650242A5742B70042F075 /* Beth.png */,
+				8ED650262A5742B70042F075 /* Japheth.png */,
+				8ED650252A5742B70042F075 /* Jerry.png */,
+				8ED650282A5742B70042F075 /* Naruto.png */,
+				8ED650272A5742B70042F075 /* Rick.png */,
 				8E683D962A572BFD00F189F4 /* LaunchScreen.storyboard */,
 				8E683D992A572BFD00F189F4 /* Info.plist */,
+				8E683D9F2A57325C00F189F4 /* CharacterTableViewCell.swift */,
+				8E518EF02A582F550035188F /* DetailViewController.swift */,
 			);
 			path = UIKit_2;
 			sourceTree = "<group>";
@@ -124,8 +148,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED6502C2A5742B70042F075 /* Japheth.png in Resources */,
 				8E683D982A572BFD00F189F4 /* LaunchScreen.storyboard in Resources */,
 				8E683D952A572BFD00F189F4 /* Assets.xcassets in Resources */,
+				8ED6502E2A5742B70042F075 /* Naruto.png in Resources */,
+				8ED6502A2A5742B70042F075 /* Beth.png in Resources */,
+				8ED6502D2A5742B70042F075 /* Rick.png in Resources */,
+				8ED650292A5742B70042F075 /* Adam.jpg in Resources */,
+				8ED6502B2A5742B70042F075 /* Jerry.png in Resources */,
 				8E683D932A572BFA00F189F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +169,9 @@
 			files = (
 				8E683D902A572BFA00F189F4 /* ViewController.swift in Sources */,
 				8E683D8C2A572BFA00F189F4 /* AppDelegate.swift in Sources */,
+				8E518EF12A582F550035188F /* DetailViewController.swift in Sources */,
 				8E683D8E2A572BFA00F189F4 /* SceneDelegate.swift in Sources */,
+				8E683DA02A57325C00F189F4 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
