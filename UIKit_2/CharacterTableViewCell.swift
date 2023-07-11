@@ -50,30 +50,12 @@ final class CharacterTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setUpData(_ data: CharacterData) {
-        characterImageView.image = data.image
+    func setUpData(_ data: CharacterResponseModel) {
+        characterImageView.download(from: data.image)
         nameLabel.text = "Name: " + data.name
-        statusLabel.text = "Status: "
-        switch data.status {
-        case CharacterData.Status.alive:
-            statusLabel.text! += "alive"
-        case CharacterData.Status.dead:
-            statusLabel.text! += "dead"
-        case CharacterData.Status.unknown:
-            statusLabel.text! += "unknown"
-        }
+        statusLabel.text = "Status: " + data.status
         speciesLabel.text = "Species: " + data.species
-        genderLabel.text = "Gender: "
-        switch data.gender {
-        case CharacterData.Gender.male:
-            genderLabel.text! += "male"
-        case CharacterData.Gender.female:
-            genderLabel.text! += "female"
-        case CharacterData.Gender.genderless:
-            genderLabel.text! += "genderless"
-        case CharacterData.Gender.unknown:
-            genderLabel.text! += "unknown"
-        }
-        locationLabel.text = "Location: " + 	data.location
+        genderLabel.text = "Gender: " + data.gender
+        locationLabel.text = "Location: " + data.location.name
     }
 }
