@@ -13,14 +13,13 @@ struct CharacterResponseModel: Codable {
     let name, status, species, type: String
     let gender: String
     let origin, location: Location
-    let image: String
     let episode: [String]
     let url: String
     let created: String
     
     enum CodingKeys: String, CodingKey {
         case id, name, status, species, type
-        case gender, origin, location, image
+        case gender, origin, location
         case episode, url, created
     }
 }

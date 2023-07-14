@@ -5,29 +5,6 @@
 //  Created by Kamil on 06.07.2023.
 //
 
-struct CharacterData {
-    enum Status {
-        case alive
-        case dead
-        case unknown
-    }
-    
-    enum Gender {
-        case female
-        case male
-        case genderless
-        case unknown
-    }
-    
-    let id: UUID
-    var name: String
-    let status: Status
-    var species: String
-    let gender: Gender
-    var location: String
-    let image: UIImage
-}
-
 import UIKit
 
 final class CharacterTableViewCell: UITableViewCell {
@@ -51,11 +28,18 @@ final class CharacterTableViewCell: UITableViewCell {
     }
     
     func setUpData(_ data: CharacterResponseModel) {
-        characterImageView.download(from: data.image)
         nameLabel.text = "Name: " + data.name
         statusLabel.text = "Status: " + data.status
         speciesLabel.text = "Species: " + data.species
         genderLabel.text = "Gender: " + data.gender
         locationLabel.text = "Location: " + data.location.name
+    }
+    
+    func setUpData(_ data: Character) {
+        nameLabel.text = "Name: " + data.name!
+        statusLabel.text = "Status: " + data.status!
+        speciesLabel.text = "Species: " + data.species!
+        genderLabel.text = "Gender: " + data.gender!
+        locationLabel.text = "Location: " + data.location!
     }
 }

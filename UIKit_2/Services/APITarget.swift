@@ -27,7 +27,7 @@ extension APITarget: Moya.TargetType {
     var path: String {
         switch self {
         case .getCharacters:
-            return "character/1,2,3,4,5"
+            return "character/1,2,3,4,6"
         }
     }
 
@@ -43,6 +43,7 @@ extension APITarget: Moya.TargetType {
     }
 
     var headers: [String : String]? {
-        return ["Content-type": "application/json"]
+        return ["Content-type": "application/json",
+                "Cache-Control": "no-cache"]
     }
 }
